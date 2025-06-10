@@ -1,0 +1,16 @@
+{
+  "name": "Nautilus Trader Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "rust-lang.rust-analyzer"
+  ],
+  "forwardPorts": [],
+  "postCreateCommand": "pip install maturin && maturin develop && pip install -r requirements.txt",
+  "remoteUser": "vscode"
+}
